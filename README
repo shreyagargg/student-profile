@@ -1,0 +1,164 @@
+# Student Management CRUD App
+
+A full-stack Student Management application built with **React** (frontend), **Node.js** (backend), and **Neon Database** (PostgreSQL). This project is designed for learning purposes and demonstrates authentication and basic CRUD (Create, Read, Update, Delete) operations.
+
+---
+
+## 🚀 Features
+
+* 🔐 User Authentication (Signup/Login)
+* 👨‍💼 Admin-only access
+* ➕ Add new students
+* 📋 View all students
+* ✏️ Edit student details
+* ❌ Delete students
+* 🌐 Full-stack integration (React + Node.js + PostgreSQL)
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React
+* Axios (for API requests)
+* React Router (for navigation)
+
+### Backend
+
+* Node.js
+* Express.js
+* PostgreSQL (Neon Database)
+* JWT (Authentication)
+* bcrypt (Password hashing)
+
+---
+
+## 📁 Project Structure
+
+```
+project-root/
+│
+├── client/               # React frontend
+│   ├── src/
+│   └── package.json
+│
+├── server/               # Node.js backend
+│   ├── controllers/
+│   ├── routes/
+│   ├── middleware/
+│   ├── db/
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/student-crud-app.git
+cd student-crud-app
+```
+
+---
+
+### 2. Setup Backend
+
+```bash
+cd server
+npm install
+```
+
+Create a `.env` file in the `server` directory:
+
+```
+PORT=5000
+DATABASE_URL=your_neon_database_url
+JWT_SECRET=your_secret_key
+```
+
+Run the server:
+
+```bash
+npm run dev
+```
+
+---
+
+### 3. Setup Frontend
+
+```bash
+cd client
+npm install
+npm start
+```
+
+---
+
+## 🔑 API Endpoints
+
+### Auth Routes
+
+* `POST /api/auth/register` → Register user
+* `POST /api/auth/login` → Login user
+
+### Student Routes (Protected)
+
+* `GET /api/students` → Get all students
+* `POST /api/students` → Add student
+* `PUT /api/students/:id` → Update student
+* `DELETE /api/students/:id` → Delete student
+
+---
+
+## 🔒 Authentication
+
+* Uses JWT for secure authentication
+* Protected routes accessible only by authenticated users
+* Passwords are hashed using bcrypt
+
+---
+
+## 📌 Future Improvements
+
+* Role-based access control (Admin/User)
+* Pagination & search functionality
+* UI enhancements
+* Deployment (Vercel / Render / Railway)
+
+---
+
+## 📚 Learning Goals
+
+* Understand full-stack development workflow
+* Learn REST API design
+* Implement authentication & authorization
+* Work with PostgreSQL (Neon)
+* Practice CRUD operations
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork this repo and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+Shreya Garg
+GitHub: https://github.com/shreyagargg
+
+---
+
+⭐ If you found this helpful, consider giving it a star!
